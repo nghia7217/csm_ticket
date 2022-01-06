@@ -41,3 +41,8 @@
     margin-right: 10px;
     font-size: 20px;   
 }
+.sidebarWrapper__Menu-list-item-children{
+    width: 100%;
+    margin-left: 65px;
+    cursor: pointer;
+}

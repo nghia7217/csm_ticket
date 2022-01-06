@@ -33,10 +33,11 @@ export default function Sidebar() {
                             </li>
                             <li className="sidebarWrapper__Menu-list-item">
                                  <img src={vector3} alt="" className='sidebarWrapper__Menu-icon'/>   
-                                 Cài đặt 
-                                 <span className='sidebarWrapper__Menu-list-item-children'>Gói dịch vụ</span> 
+                                 Cài đặt        
                             </li>
-                        </ul>               
+                            <span className='sidebarWrapper__Menu-list-item-children'>Gói dịch vụ</span>  
+                        </ul> 
+                                     
                </div>
            </div>
         </div>

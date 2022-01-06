@@ -7,37 +7,37 @@ export default function Chart() {
      const data = [
         {
           name: 'Thứ 2',
-          uv: 1400,
+          "Doanh thu": 1400,
          
         },
         {
           name: 'Thứ 3',
-          uv: 1800,
+          "Doanh thu": 1800,
          
         },
         {
           name: 'Thứ 4',
-          uv: 2000,
+          "Doanh thu": 2000,
         
         },
         {
           name: 'Thứ 5',
-          uv: 2780,
+          "Doanh thu": 2780,
         
         },
         {
           name: 'Thứ 6',
-          uv: 1890,
+          "Doanh thu": 1890,
          
         },
         {
           name: 'Thứ 7',
-          uv: 2390,
+          "Doanh thu": 2390,
          
         },
         {
           name: 'CN',
-          uv: 3490,
+          "Doanh thu": 3490,
          
         },
       ];
@@ -47,12 +47,14 @@ export default function Chart() {
             <h3 className="chart__title">
                 Thống kê
             </h3>
-            <div>
-                <ul>
-                    <li>Doanh thu</li>
-                    <li>
+            <div className="chart__name">
+                <ul className="chart__name-header"> 
+                    <li className="chart__name-left">Doanh thu</li>
+                    <li className="chart__name-right">
+                      <span className="chart__name-right-day">
                         Tháng 4, 2021
-                        <CalendarOutlined/>
+                      </span>
+                        <CalendarOutlined className="chart__name-right-item"/>
                     </li>
                 </ul>
             </div>
@@ -61,11 +63,17 @@ export default function Chart() {
                     <XAxis dataKey="name" stroke="#888888"/>
                     <YAxis/>
                     <CartesianGrid stroke="#ECE9F1"/>
-                     <Area type="monotone" dataKey="uv" stroke="#FF8A48" fill=" rgba(250, 160, 95, 0.26)" />
+                     <Area type="monotone" dataKey="Doanh thu" stroke="#FF8A48" fill=" rgba(250, 160, 95, 0.26)" />
                     <Tooltip/>
                     <Line/>
                 </AreaChart>
             </ResponsiveContainer>
-        </div>
+
+           
+              <ul className="totalrevenue">
+                <li className="totalrevenue__header">Tổng doanh thu theo tuần</li>
+                <li className="totalrevenue__price">525.145.000 <span className="totalrevenue__price-denominations">đồng</span></li>
+              </ul>
+        </div>       
     )
 }
