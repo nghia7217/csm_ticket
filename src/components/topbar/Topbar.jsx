@@ -3,13 +3,14 @@ import "./topbar.css"
 import {MailOutlined} from '@ant-design/icons'
 import {BellOutlined} from '@ant-design/icons'
 import {SearchOutlined} from '@ant-design/icons'
+import logo from './img/insight.png'
 export default function Topbar() {
     return (
         <div className='topbar'>
             <div className='grid'>
                 <div className="header-with-search">
                     <div className='header__logo'>
-                        <img src="./src/components/topbar/insight.png" alt="Logo" className='header__logo-img' />
+                        <img src={logo} alt="Logo" className='header__logo-img' />
                     </div>
                     <div className='header__search'>
                         <div className='header__search-all'>
