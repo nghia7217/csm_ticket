@@ -44,9 +44,6 @@ export default function Chart() {
 
     return (
         <div className="chart">
-            <h3 className="chart__title">
-                Thống kê
-            </h3>
             <div className="chart__name">
                 <ul className="chart__name-header"> 
                     <li className="chart__name-left">Doanh thu</li>

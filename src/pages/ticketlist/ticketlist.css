@@ -1,3 +1,9 @@
 .tickerlist{
     flex: 4;
+    background-color: #fff;
+    border-radius: 24px;
+    margin: 0px 20px 20px 0px;
+}
+.ant-table-wrapper {
+    margin: 0px 21px;
 }

@@ -1,48 +1,102 @@
 import "./ticketlist.css"
 import { Table } from 'antd';
-
+import Header from "../../components/Header/Header";
+import Pagination from "../../components/Pagination/Pagination";
+function showTotal(total) {
+  return `Total ${total} items`;
+}
 export default function Ticketlist() {
-    const dataSource = [
-        {
-          key: '1',
+      const dataSource = [
+        {    
           STT: '1',
           "Booking code": 'ALTOJMNB',
           "Số vé": 123456789034,
-          "Tình trạng sử dụng":'Đã sử dụng',
+          "Status":'Đã sử dụng',
           "Ngày sử dụng":'14/04/2021',
           "Ngày xuất vé":'14/04/2021',
           "Cổng check - in":'Cổng 1',
         },
-        {
-            key: '2',
-            STT: '2',
-            "Booking code": 'ALTOJMNB',
-            "Số vé": 123456789034,
-            "Tình trạng sử dụng":'Đã sử dụng',
-            "Ngày sử dụng":'14/04/2021',
-            "Ngày xuất vé":'14/04/2021',
-            "Cổng check - in":'Cổng 1',
-          },
-          {
-            key: '3',
-            STT: '3',
-            "Booking code": 'ALTOJMNB',
-            "Số vé": 123456789034,
-            "Tình trạng sử dụng":'Đã sử dụng',
-            "Ngày sử dụng":'14/04/2021',
-            "Ngày xuất vé":'14/04/2021',
-            "Cổng check - in":'Cổng 1',
-          },
-          {
-            key: '4',
-            STT: '4',
-            "Booking code": 'ALTOJMNB',
-            "Số vé": 123456789034,
-            "Tình trạng sử dụng":'Đã sử dụng',
-            "Ngày sử dụng":'14/04/2021',
-            "Ngày xuất vé":'14/04/2021',
-            "Cổng check - in":'Cổng 1',
-          },
+        {    
+          STT: '2',
+          "Booking code": 'ALTOJMNB',
+          "Số vé": 123456789034,
+          "Status":'Đã sử dụng',
+          "Ngày sử dụng":'14/04/2021',
+          "Ngày xuất vé":'14/04/2021',
+          "Cổng check - in":'Cổng 1',
+        },
+        {    
+          STT: '3',
+          "Booking code": 'ALTOJMNB',
+          "Số vé": 123456789034,
+          "Status":'Đã sử dụng',
+          "Ngày sử dụng":'14/04/2021',
+          "Ngày xuất vé":'14/04/2021',
+          "Cổng check - in":'Cổng 1',
+        },
+        {    
+          STT: '4',
+          "Booking code": 'ALTOJMNB',
+          "Số vé": 123456789034,
+          "Status":'Đã sử dụng',
+          "Ngày sử dụng":'14/04/2021',
+          "Ngày xuất vé":'14/04/2021',
+          "Cổng check - in":'Cổng 1',
+        },
+        {    
+          STT: '5',
+          "Booking code": 'ALTOJMNB',
+          "Số vé": 123456789034,
+          "Status":'Đã sử dụng',
+          "Ngày sử dụng":'14/04/2021',
+          "Ngày xuất vé":'14/04/2021',
+          "Cổng check - in":'Cổng 1',
+        },
+        {    
+          STT: '6',
+          "Booking code": 'ALTOJMNB',
+          "Số vé": 123456789034,
+          "Status":'Đã sử dụng',
+          "Ngày sử dụng":'14/04/2021',
+          "Ngày xuất vé":'14/04/2021',
+          "Cổng check - in":'Cổng 1',
+        },
+        {    
+          STT: '7',
+          "Booking code": 'ALTOJMNB',
+          "Số vé": 123456789034,
+          "Status":'Đã sử dụng',
+          "Ngày sử dụng":'14/04/2021',
+          "Ngày xuất vé":'14/04/2021',
+          "Cổng check - in":'Cổng 1',
+        },
+        {    
+          STT: '8',
+          "Booking code": 'ALTOJMNB',
+          "Số vé": 123456789034,
+          "Status":'Đã sử dụng',
+          "Ngày sử dụng":'14/04/2021',
+          "Ngày xuất vé":'14/04/2021',
+          "Cổng check - in":'Cổng 1',
+        },
+        {    
+          STT: '9',
+          "Booking code": 'ALTOJMNB',
+          "Số vé": 123456789034,
+          "Status":'Đã sử dụng',
+          "Ngày sử dụng":'14/04/2021',
+          "Ngày xuất vé":'14/04/2021',
+          "Cổng check - in":'Cổng 1',
+        },
+        {    
+          STT: '10',
+          "Booking code": 'ALTOJMNB',
+          "Số vé": 123456789034,
+          "Status":'Đã sử dụng',
+          "Ngày sử dụng":'14/04/2021',
+          "Ngày xuất vé":'14/04/2021',
+          "Cổng check - in":'Cổng 1',
+        },
       ];
       
       const columns = [
@@ -63,8 +117,8 @@ export default function Ticketlist() {
         },
         {
             title: 'Tình trạng sử dụng',
-            dataIndex: 'Tình trạng sử dụng',
-            key: 'Tình trạng sử dụng',
+            dataIndex: 'Status',
+            key: 'status',            
         },
         {
             title: 'Ngày sử dụng',
@@ -89,9 +143,12 @@ export default function Ticketlist() {
 
       ];
       
+  
     return (
         <div className="tickerlist">
-         <Table dataSource={dataSource} columns={columns} />;
+          <Header name="Danh sách vé"/>
+         <Table dataSource={dataSource} columns={columns} pagination={false}/>;
+         <Pagination/>
         </div>
         
     )

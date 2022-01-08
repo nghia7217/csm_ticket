@@ -14,7 +14,7 @@ function App() {
     <Router> 
       <Topbar/>
       <div className="grid container">
-        <Sidebar/>  
+        <Sidebar/>    
         <Switch>
           <Route exact path="/">
             <Home/>
