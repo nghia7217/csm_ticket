@@ -1,5 +1,5 @@
 import "./familypackage.css"
-import "../chart/chart.css"
+import "../Chart/chart.css"
 import{CalendarOutlined } from '@ant-design/icons'
 import chart from "./img/chartfamily.png"
 export default function Familypackage() {
@@ -20,7 +20,7 @@ export default function Familypackage() {
                 <h3 className="familypackage__right-title">
                     Gói gia đình
                 </h3>
-                <img src={chart} alt="" className="" className="familypackage__right-img"/>
+                <img src={chart} alt=""  className="familypackage__right-img"/>
             </div>
             
         </div>

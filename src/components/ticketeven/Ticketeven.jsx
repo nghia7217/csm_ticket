@@ -9,7 +9,7 @@ export default function Ticketeven() {
                 <h3 className="ticketeven__left-title">
                     Gói sự kiện
                 </h3>
-                <img src={charteven} alt="" className="" className="ticketeven__left-img"/>
+                <img src={charteven} alt=""  className="ticketeven__left-img"/>
             </div>
             <div className="ticketeven__right">
                 <ul className="ticketeven__right-ul">

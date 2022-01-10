@@ -4,6 +4,7 @@
     align-items: center;
     justify-content: center;
     list-style: none;
+    margin: 30px 0;
 
 }
 .paginations-item{
@@ -26,10 +27,6 @@
     height: 30px;
     text-align: center;
     line-height: 30px;
-}
-
-.paginations-item__icon{
-
 }
 
 .paginations-item__icon--active{

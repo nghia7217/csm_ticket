@@ -1,0 +1,12 @@
+.css-1pclhgl-MuiTable-root{
+width: unset;
+}
+
+.tableContent{
+    margin: 0 20px;
+   
+}
+.tableContent__header{
+    font-weight: 900;
+    font-size: 1rem;
+}

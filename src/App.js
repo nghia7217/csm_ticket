@@ -8,7 +8,6 @@ import {
   Route,
 } from "react-router-dom";
 import Ticketlist from "./pages/ticketlist/Ticketlist";
-import 'antd/dist/antd.css';
 function App() {
   return (
     <Router> 
