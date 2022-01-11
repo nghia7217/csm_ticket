@@ -8,6 +8,8 @@ import {
   Route,
 } from "react-router-dom";
 import Ticketlist from "./pages/ticketlist/Ticketlist";
+import Changeticket from "./pages/changeticket/Changeticket";
+import Setting from "./pages/Setting/Setting";
 function App() {
   return (
     <Router> 
@@ -20,6 +22,12 @@ function App() {
           </Route>
           <Route path="/ticket">
             <Ticketlist/>
+          </Route>
+          <Route path="/changeticket">
+            <Changeticket/>
+          </Route>
+          <Route path="/setting">
+            <Setting/>
           </Route>
         </Switch>
       </div>
