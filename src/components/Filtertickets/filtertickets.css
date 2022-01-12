@@ -1,0 +1,46 @@
+.filtertickets__ul{
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    padding: 16px;
+}
+
+.filtertickets__header{
+ font-size: 1.3rem;
+ font-weight: 800;
+ color: #000;
+ margin: 16px;
+}
+
+.test{
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+}
+
+.filtertickets__li{
+    font-size: 14px;
+    float: left;
+}
+
+.css-o9k5xi-MuiInputBase-root-MuiOutlinedInput-root{
+    font-size: 5.5px !important;
+    
+}
+
+.css-14s5rfu-MuiFormLabel-root-MuiInputLabel-root{
+    font-size: 12px !important;
+   
+}
+
+.filtertickets__li-margin{
+    margin-right: 74px;
+}
+
+.filtertickets__li-title{
+    font-weight: 800;
+}
+
+.filtertickets__li-input{
+    color: #27AEF9;
+}
