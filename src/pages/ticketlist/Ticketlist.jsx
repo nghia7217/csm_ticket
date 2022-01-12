@@ -10,7 +10,7 @@ export default function Ticketlist() {
     return (
         <div className="tickerlist">
           <Header name="Danh sách vé"/>
-          <Headerticket/>
+          <Headerticket namebtnone="Lọc vé" namebtntwo="Xuất file (.csv)"/>
           <TableContent/>
           <Pagination/>
         </div>

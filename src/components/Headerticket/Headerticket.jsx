@@ -1,6 +1,6 @@
 import "./headerticket.css"
 import { SearchOutlined,FilterOutlined } from '@ant-design/icons';
-export default function Headerticket() {
+export default function Headerticket(props) {
     return (
         <div className="headerticket">
            <nav className="headerticket__navbar">
@@ -15,13 +15,13 @@ export default function Headerticket() {
                     <li className="headerticket__list-item headerticket__list-item-button">
                         <div className="headerticket__list-content">
                             <FilterOutlined className="headerticket__list-icon" />
-                            Lọc vé
+                            {props.namebtnone}
                         </div>
                     </li>
 
                     <li className="headerticket__list-item headerticket__list-item-button">
                         <span className="headerticket__list-content">
-                             Xuất file (.csv)
+                             {props.namebtntwo}
                         </span>
                     </li>
                 </ul>
