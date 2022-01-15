@@ -12,7 +12,7 @@ export default function Headerticket(props) {
                 </ul>
 
                 <ul className="headerticket__list">
-                    <li className="headerticket__list-item headerticket__list-item-button">
+                    <li className="headerticket__list-item headerticket__list-item-button display">
                         <div className="headerticket__list-content">
                             <FilterOutlined className="headerticket__list-icon" />
                             {props.namebtnone}

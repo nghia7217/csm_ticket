@@ -2,45 +2,70 @@
     display: flex;
     list-style: none;
     justify-content: space-between;
-    padding: 16px;
+    padding: 10px;
 }
 
 .filtertickets__header{
  font-size: 1.3rem;
  font-weight: 800;
  color: #000;
- margin: 16px;
+ margin: 10px;
 }
 
-.test{
+.filtertickets__center{
     display: flex;
-    flex-direction: column;
-    margin-right: 20px;
+}
+.filtertickets__content{ 
+    margin-left: 10px;
+}
+.filtertickets__list{
+    padding: 0;
+    list-style: none;
 }
 
-.filtertickets__li{
-    font-size: 14px;
-    float: left;
+.filtertickets__item{
+    padding: 3px 0;
+    display: flex;
+}
+.span{
+    margin-bottom: 28px;
 }
 
-.css-o9k5xi-MuiInputBase-root-MuiOutlinedInput-root{
-    font-size: 5.5px !important;
-    
+.filtertickets__item-status{
+    margin-bottom: 50px;
 }
 
-.css-14s5rfu-MuiFormLabel-root-MuiInputLabel-root{
-    font-size: 12px !important;
-   
+.filtertickets__item-left{
+    font-weight: 600;
+}
+.filtertickets__item-input{
+    margin-right: 5px;
+    margin-bottom: 5px;
 }
 
-.filtertickets__li-margin{
-    margin-right: 74px;
+.filtertickets__since{
+    margin: 18px 0;
 }
 
-.filtertickets__li-title{
-    font-weight: 800;
+.filtertickets__today{
+    margin-top: 40px;
 }
 
-.filtertickets__li-input{
-    color: #27AEF9;
+.css-o9k5xi-MuiInputBase-root-MuiOutlinedInput-root.Mui-disabled,
+.css-o9k5xi-MuiInputBase-root-MuiOutlinedInput-root  {
+    margin-right: 10px;
+}
+
+.filtertickets__btn{
+    background-color: #fff;
+    font-size: 1rem;
+    font-weight: 700;
+    width: 110px;
+    height: 35px;
+    border-radius: 6px;
+    color: #FF993C;
+    border: 1px solid #FF993C;
+    margin-left: 87px;
+    margin-top: 20px;
+    cursor: pointer;
 }

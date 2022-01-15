@@ -10,5 +10,13 @@ width: unset;
 .css-1ygcj2i-MuiTableCell-root{
  font-weight: 800 !important;
  font-family: unset !important;
- background-color:  #F1F4F8 !important;
+}
+
+
+.MuiTableRow-root.css-1q1u3t4-MuiTableRow-root{
+    background-color: #F7F8FB;
+}
+
+.MuiTableRow-root.css-1q1u3t4-MuiTableRow-root:nth-of-type(odd) {
+    background-color: #fff;
 }

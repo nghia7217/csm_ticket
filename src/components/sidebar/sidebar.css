@@ -29,12 +29,17 @@
     border-radius: 8px;
     height: 40px;
     padding-left: 20px;
+    transition: right linear 0.1s;
+    right: 0;
+    position: relative;
 }
 
-.sidebarWrapper__Menu-list-item.active
+.sidebarWrapper__Menu-list-item.active, 
+.sidebarWrapper__Menu-list-item:hover
 {
     background-color: #FFB800;
     color: #fff;
+    right: -4px;
 }
 
 .sidebarWrapper__Menu-icon{
@@ -45,4 +50,9 @@
     width: 100%;
     margin-left: 65px;
     cursor: pointer;
+}
+
+.link{
+    text-decoration: none;
+    color: #000;
 }

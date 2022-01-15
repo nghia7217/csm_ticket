@@ -11,7 +11,7 @@ export default function Changeticket() {
            <div className="grid__3">
                  <Header name="Đối soát vé"/>
                  <Headerticket namebtntwo="Xuất file (.csv)" />
-                <Tablechangticket row1 ="STT" row2 ="Số vé"  row3 ="Ngày sử dụng"  row4 ="Tên loại vé"  row5 ="Cổng check - in"/>
+                 <Tablechangticket row1 ="STT" row2 ="Số vé"  row3 ="Ngày sử dụng"  row4 ="Tên loại vé"  row5 ="Cổng check - in"/>
                  <Pagination/>
            </div>
            <div className="grid__1">

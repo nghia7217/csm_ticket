@@ -7,56 +7,51 @@ import DatePicker from '@mui/lab/DatePicker';
 import Stack from '@mui/material/Stack';
 
 
-
-
 export default function Filtertickets() {
     const [value, setValue] = React.useState(null);
     return (
         <div className="filtertickets">
             <div className="filtertickets__header"> Lọc vé</div>
-            <div>
-                <ul className="filtertickets__ul">
-                    <li className="filtertickets__li filtertickets__li-title">Tình trạng đối soát</li>
-                    <div className="test">
-                        <li className="filtertickets__li">
-                            <input type="radio" className="filtertickets__li-input" /> Tất cả
+            <div className="filtertickets__center">
+                <div className="filtertickets__content">
+                    <ul className="filtertickets__list">
+                        <li className="filtertickets__item filtertickets__item-status filtertickets__item-left">Tình trạng đối soát</li>
+                        <li className="filtertickets__item filtertickets__item-left">Loại vé</li>
+                        <li className="filtertickets__item filtertickets__item-left filtertickets__since">Từ ngày</li>
+                        <li className="filtertickets__item filtertickets__item-left filtertickets__today">Đến ngày</li>
+                    </ul>
+                </div>
+                <div className="filtertickets__content">
+                    <ul className="filtertickets__list">
+                        <li className="filtertickets__item">
+                            <span className="span">
+                                <input type="radio" className="filtertickets__item-input" />
+                                Tất cả                      
+                                <br></br>
+                                <input type="radio" className="filtertickets__item-input"/>
+                                Đã đối soát                
+                                <br></br>
+                                <input type="radio" className="filtertickets__item-input"/>
+                                Chưa đối soát
+                            </span>
                         </li>
-                        <li className="filtertickets__li">
-                            <input type="radio" className="filtertickets__li-input" /> Đã đối soát
+                        <li className="filtertickets__item">Vé cổng</li>
+                        <li className="filtertickets__item">
+                        <LocalizationProvider dateAdapter={AdapterDateFns}>
+                            <Stack spacing={3}>
+                                <DatePicker
+                                disabled
+                                onChange={(newValue) => {
+                                    setValue(newValue);
+                                }}
+                                renderInput={(params) => <TextField {...params} />}
+                                />
+                            </Stack>
+                            </LocalizationProvider>
                         </li>
-                        <li className="filtertickets__li">
-                            <input type="radio"  className="filtertickets__li-input"/> Chưa đối soát
-                        </li>
-                    </div>
-                </ul>
-                <ul className="filtertickets__ul">
-                    <li className="filtertickets__li filtertickets__li-title ">Loại vé</li>
-                    <li className="filtertickets__li filtertickets__li-margin">Vé cổng</li>
-                </ul>
-                <ul className="filtertickets__ul">
-                    <li className="filtertickets__li filtertickets__li-title">Từ ngày</li>
-                    <li className="filtertickets__li">
-                    <LocalizationProvider dateAdapter={AdapterDateFns}>
-                         <Stack spacing={3}>
-                            <DatePicker
-                    label="12/1/2022"
-                    disabled
-                    value={value}
-                    onChange={(newValue) => {
-                        setValue(newValue);
-                    }}
-                    renderInput={(params) => <TextField {...params} />}
-                 />
-                </Stack>
-                    </LocalizationProvider>  
-                    </li>
-                </ul>
-                <ul className="filtertickets__ul">
-                    <li className="filtertickets__li filtertickets__li-title">Đến ngày</li>
-                    <li className="filtertickets__li">
-                            <LocalizationProvider dateAdapter={AdapterDateFns} >
-                                <DatePicker 
-                                    label="mm/dd/yy"
+                        <li className="filtertickets__item">
+                            <LocalizationProvider dateAdapter={AdapterDateFns}>
+                                <DatePicker                   
                                     value={value}
                                     onChange={(newValue) => {
                                     setValue(newValue);
@@ -64,10 +59,11 @@ export default function Filtertickets() {
                                     renderInput={(params) => <TextField {...params} />}
                                 />
                             </LocalizationProvider>
-                    </li>
-                </ul>
+                        </li>
+                    </ul>
+                </div>
             </div>
-           
+          <button className="filtertickets__btn">Lọc</button>
                     
             
              
