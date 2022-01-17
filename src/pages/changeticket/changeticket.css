@@ -19,3 +19,11 @@
     border-radius: 10px;
 }
 
+
+.headerticket__list .changeticket__list{
+    background-color: #FF993C;
+}
+
+span.headerticket__list-content.changeticket__list-content {
+    color: #fff;
+}
