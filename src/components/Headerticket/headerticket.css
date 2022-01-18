@@ -63,6 +63,18 @@
     cursor: pointer;
 }
 
+button.MuiButton-root.MuiButton-text.MuiButton-textPrimary.MuiButton-sizeMedium.MuiButton-textSizeMedium.MuiButtonBase-root.css-1e6y48t-MuiButtonBase-root-MuiButton-root {
+    border: 1px solid #FF993C;
+    height: 100%;
+    margin: 0 7px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    color: #FF993C;
+    font-weight: 800;
+}
+
 .headerticket__list-content{
     padding:0 10px;
     color: #FF993C;
@@ -71,4 +83,25 @@
 .headerticket__list-icon{
     padding-right: 5px;
    font-size: 20px;
+}
+
+
+.box__content{
+    padding: 0;
+}
+
+.box__li{
+    
+    list-style: none;
+    display: inline-block;
+    padding: 5px;
+}
+
+.box__list{
+    padding: 10px;
+}
+
+input{
+    margin-right: 5px;
+    font-size: 1rem;
 }
