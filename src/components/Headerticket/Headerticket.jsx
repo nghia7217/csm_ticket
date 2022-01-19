@@ -1,5 +1,4 @@
 import "./headerticket.css"
-
 import { SearchOutlined,FilterOutlined } from '@ant-design/icons';
 import * as React from 'react';
 import Box from '@mui/material/Box';
@@ -95,28 +94,28 @@ export default function Headerticket(props) {
                             <h5>Cổng Check - in</h5>
                             <ul className="box__content">
                                 <li className="box__list box__li">
-                                    <input type="radio" />
+                                    <input type="checkbox" />
                                     Tất cả
                                 </li>
                                 <li className="box__list box__li">
-                                    <input type="radio" />
+                                    <input type="checkbox" />
                                     Cổng 1
                                 </li>
                                 <li className="box__list box__li">
-                                    <input type="radio" />
+                                    <input type="checkbox" />
                                     Cổng 2
                                 </li>
                                 <br></br>
                                 <li className="box__list box__li">
-                                    <input type="radio" />
+                                    <input type="checkbox" />
                                     Cổng 3
                                 </li> 
                                 <li className="box__list box__li">
-                                    <input type="radio" />
+                                    <input type="checkbox" />
                                     Cổng 4
                                 </li>
                                 <li className="box__list box__li">
-                                    <input type="radio" />
+                                    <input type="checkbox" />
                                     Cổng 5
                                 </li>
                             </ul>

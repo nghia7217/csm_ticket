@@ -12,3 +12,59 @@
 span.headerticket__list-content.setting__list-content {
     color: #fff;
 }
+
+
+
+.Setting__modal-header{
+display: flex;
+justify-content: center;
+}
+
+.Setting__modal-name-ticket{
+    margin: 20px 0;
+}
+
+.Setting__modal-nameticket{
+    margin-bottom: 5px;
+    font-size: 1rem;
+}
+
+.Setting__modal-required{
+    color: #FD5959;
+}
+
+.Setting__modal-input{
+    height: 30px;
+    width: 300px;
+    border-radius: 5px;
+    padding-left: 15px;
+}
+
+.Setting__modal-date-ticket{
+    padding: 0;
+}
+
+.Setting__modal-date{
+    margin: 20px 0;
+}
+
+.Setting__modal-checkbox{
+    height: 20px;
+    width: 20px;
+}
+
+.Setting__modal-Ticket-prices{
+    display: flex;
+    align-items: center;
+    margin: 15px 0;
+}
+
+.Setting__modal-checkbox-input {
+    font-size: 1.2rem;
+    width: 140px;
+    padding: 10px;
+    border-radius: 14px;
+    border: none;
+    background-color: #F7F8FB;
+    margin-left: 10px;
+}
