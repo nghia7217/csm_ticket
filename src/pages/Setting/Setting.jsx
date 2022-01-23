@@ -1,6 +1,5 @@
 
 import Header from "../../components/Header/Header"
-import Pagination from "../../components/Pagination/Pagination";
 import "./setting.css"
 import "../../components/Headerticket/headerticket.css"
 import { SearchOutlined } from '@ant-design/icons';
@@ -158,7 +157,6 @@ export default function Setting() {
                 </Box>
             </Modal>
             </div>
-            <Pagination/>
         </div>
     )
 }

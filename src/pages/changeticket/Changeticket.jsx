@@ -2,9 +2,7 @@ import "./changeticket.css"
 import "../../components/Headerticket/headerticket.css"
 import { SearchOutlined } from '@ant-design/icons';
 import Header from "../../components/Header/Header";
-import Pagination from "../../components/Pagination/Pagination";
 import Filtertickets from "../../components/Filtertickets/Filtertickets";
-import Tablechangticket from "../../components/Tablechangticket/Tablechangticket";
 export default function Changeticket(props) {
     return (
         <div className="changeticket">
@@ -27,8 +25,6 @@ export default function Changeticket(props) {
                     </ul>
                 </nav>
               </div>
-                 <Tablechangticket row1 ="STT" row2 ="Số vé"  row3 ="Ngày sử dụng"  row4 ="Tên loại vé"  row5 ="Cổng check - in"/>
-                 <Pagination/>
            </div>
            <div className="grid__1">
                <Filtertickets/>

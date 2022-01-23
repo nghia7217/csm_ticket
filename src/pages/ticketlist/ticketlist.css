@@ -7,3 +7,29 @@
 .ant-table-wrapper {
     margin: 0px 21px;
 }
+
+.package{
+    margin: 20px 20px;
+}
+
+.package__list{
+    padding: 0;
+    list-style: none;
+    display: flex;
+   
+}
+
+.package_list-item{
+    font-size: 1rem;
+    padding: 10px;
+    font-weight: 700;
+}
+.package_list-item--activity{
+    margin-left: 30px;
+    color: #FF993C;
+    border-bottom: 5px solid #FF993C;
+}
+
+a{
+    text-decoration: none;
+}
