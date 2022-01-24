@@ -1,0 +1,126 @@
+.modal-filter{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 450px;
+    transform: translate(-50%,-50%);
+    background-color: #fff;
+    padding: 18px 24px;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 12px;
+}
+
+.content-modal-filter-heading{
+    font-size: 17px;
+}
+
+.modal-filter-content{
+    margin-top: 18px;
+}
+
+.modal-filter-date{
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+}
+
+.modal-filter-date-from,
+.modal-filter-date-to{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 14px;
+    width: 50%;
+}
+
+.modal-filter-date-from-select,
+.modal-filter-date-to-select{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 6px 8px;
+    border: 1px solid #A5A8B1;
+    border-radius: 6px;
+    margin-top: 6px;
+}
+
+.modal-filter-date-from-text,
+.modal-filter-date-to-text,
+.modal-filter-status-heading,
+.modal-filter-checking-heading{
+    font-size: 12px;
+}
+
+.modal-filter-date-from-input,
+.modal-filter-date-to-input{
+    max-width: 80px;
+    border: unset;
+    font-weight: 600;
+}
+
+.modal-filter-status,
+.modal-filter-checking{
+    text-align: left;
+    margin-bottom: 14px;
+}
+
+.modal-filter-status-radio-select{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 6px;
+}
+
+.modal-filter-status-radio{
+    display: block;
+    padding-right: 3px;
+    width: 17px;
+    height: 17px;
+    border: 1px solid #27AEF9;
+    background-color: #27AEF9;
+}
+
+.modal-filter-status-radio-container{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.modal-filter-status-label{
+    display: block;
+    margin-left: 6px;
+}
+
+.modal-filter-status-checkbox-select{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.modal-filter-status-checkbox-container{
+    display: flex;
+    align-items: center;
+    width: 33.33%;
+    margin-top: 8px;
+}
+
+.modal-filter-status-checkbox{
+    width: 17px;
+    height: 17px;
+    border: 1px solid #27AEF9;
+    background-color: #27AEF9;
+}
+
+.modal-filter-button{
+    border: 1px solid #FF993C;
+    color: #FF993C;
+    background-color: #fff;
+    font-size: 13px;
+    font-weight: 900;
+    padding: 8px 45px;
+    border-radius: 5px;
+    margin-top: 20px;
+}
