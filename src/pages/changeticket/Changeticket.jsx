@@ -3,6 +3,7 @@ import "../../components/Headerticket/headerticket.css"
 import { SearchOutlined } from '@ant-design/icons';
 import Header from "../../components/Header/Header";
 import Filtertickets from "../../components/Filtertickets/Filtertickets";
+import Tablechangticket from "../../components/Content/Tablechangticket/Tablechangticket";
 export default function Changeticket(props) {
     return (
         <div className="changeticket">
@@ -25,6 +26,7 @@ export default function Changeticket(props) {
                     </ul>
                 </nav>
               </div>
+                <Tablechangticket/>
            </div>
            <div className="grid__1">
                <Filtertickets/>

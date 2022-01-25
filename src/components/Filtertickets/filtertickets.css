@@ -21,11 +21,13 @@
 .filtertickets__list{
     padding: 0;
     list-style: none;
+    max-width: 145px;
 }
 
 .filtertickets__item{
-    padding: 3px 0;
+   
     display: flex;
+    max-height: 72px;
 }
 .span{
     margin-bottom: 28px;
@@ -48,7 +50,7 @@
 }
 
 .filtertickets__today{
-    margin-top: 40px;
+   
 }
 
 .css-o9k5xi-MuiInputBase-root-MuiOutlinedInput-root.Mui-disabled,

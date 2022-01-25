@@ -42,6 +42,10 @@
     right: -4px;
 }
 
+.sidebarWrapper__Menu-list-item:hover path {
+    fill: #fff;
+}
+
 .sidebarWrapper__Menu-icon{
     margin-right: 10px;
     font-size: 20px;   
@@ -55,4 +59,14 @@
 .link{
     text-decoration: none;
     color: #000;
+}
+
+.active > li {
+    background-color: #FFB800;
+    color: #fff;
+    right: -4px;
+}
+
+.active path{
+    fill: #fff;
 }

@@ -37,12 +37,13 @@
 .modal-filter-date-from-select,
 .modal-filter-date-to-select{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     padding: 6px 8px;
     border: 1px solid #A5A8B1;
     border-radius: 6px;
     margin-top: 6px;
+    width: 146px;
 }
 
 .modal-filter-date-from-text,

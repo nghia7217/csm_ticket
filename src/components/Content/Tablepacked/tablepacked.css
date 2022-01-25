@@ -42,7 +42,6 @@
     width: 5px;
     height: 5px;
     border-radius: 50%;
-    margin: 0px 3px 1px;
 }
 
 .statususe.used{
@@ -75,10 +74,8 @@
     background-color: #FD5959;
 }
 
-.ant-table table .ant-table-cell-row-hover{
-    background: unset;
-}
 
-.ant-table table .ant-table-tbody > tr.ant-table-row:hover > td, .ant-table-tbody > tr > td.ant-table-cell-row-hover {
-    background: unset;
+.Updatepaked{
+    margin-top: 12px;
+    cursor: pointer;
 }

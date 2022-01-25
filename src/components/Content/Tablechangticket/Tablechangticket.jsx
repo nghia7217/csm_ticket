@@ -1,69 +1,84 @@
 import './tablechangticket.css'
-import Table from '@mui/material/Table';
-import TableBody from '@mui/material/TableBody';
-import TableCell from '@mui/material/TableCell';
-import TableContainer from '@mui/material/TableContainer';
-import TableRow from '@mui/material/TableRow';
-import Paper from '@mui/material/Paper';
-import TableHead from '@mui/material/TableHead';
-import { makeStyles } from '@mui/styles';
+import { Table } from 'antd';
+const data = [
+    {stt: '1',numberticket: 123456789034,dateuse:'14/04/2021',nameticket:'Vé cổng',portcheckin:'Cổng 1',status: 'Đã đối soát'},
+    {stt: '2',numberticket: 123456789034,dateuse:'14/04/2021',nameticket:'Vé cổng',portcheckin:'Cổng 1',status: 'Đã đối soát'},
+    {stt: '3',numberticket: 123456789034,dateuse:'14/04/2021',nameticket:'Vé cổng',portcheckin:'Cổng 1',status: 'Đã đối soát'},
+    {stt: '4',numberticket: 123456789034,dateuse:'14/04/2021',nameticket:'Vé cổng',portcheckin:'Cổng 1',status: 'Đã đối soát'},
+    {stt: '5',numberticket: 123456789034,dateuse:'14/04/2021',nameticket:'Vé cổng',portcheckin:'Cổng 1',status: 'Đã đối soát'},
+    {stt: '6',numberticket: 123456789034,dateuse:'14/04/2021',nameticket:'Vé cổng',portcheckin:'Cổng 1',status: 'Đã đối soát'},
+    {stt: '7',numberticket: 123456789034,dateuse:'14/04/2021',nameticket:'Vé cổng',portcheckin:'Cổng 1',status: 'Đã đối soát'},
+    {stt: '8',numberticket: 123456789034,dateuse:'14/04/2021',nameticket:'Vé cổng',portcheckin:'Cổng 1',status: 'Đã đối soát'},
+    {stt: '9',numberticket: 123456789034,dateuse:'14/04/2021',nameticket:'Vé cổng',portcheckin:'Cổng 1',status: 'Đã đối soát'},
+    {stt: '10',numberticket: 123456789034,dateuse:'14/04/2021',nameticket:'Vé cổng',portcheckin:'Cổng 1',status: 'Đã đối soát'},
+    {stt: '11',numberticket: 123456789034,dateuse:'14/04/2021',nameticket:'Vé cổng',portcheckin:'Cổng 1',status: 'Đã đối soát'},
+    {stt: '12',numberticket: 123456789034,dateuse:'14/04/2021',nameticket:'Vé cổng',portcheckin:'Cổng 1',status: 'Đã đối soát'},
+    {stt: '13',numberticket: 123456789034,dateuse:'14/04/2021',nameticket:'Vé cổng',portcheckin:'Cổng 1',status: 'Đã đối soát'},
+    {stt: '14',numberticket: 123456789034,dateuse:'14/04/2021',nameticket:'Vé cổng',portcheckin:'Cổng 1',status: 'Đã đối soát'},
+    {stt: '15',numberticket: 123456789034,dateuse:'14/04/2021',nameticket:'Vé cổng',portcheckin:'Cổng 1',status: 'Đã đối soát'},
+    {stt: '16',numberticket: 123456789034,dateuse:'14/04/2021',nameticket:'Vé cổng',portcheckin:'Cổng 1',status: 'Đã đối soát'},
+    {stt: '17',numberticket: 123456789034,dateuse:'14/04/2021',nameticket:'Vé cổng',portcheckin:'Cổng 1',status: 'Đã đối soát'},
+    {stt: '18',numberticket: 123456789034,dateuse:'14/04/2021',nameticket:'Vé cổng',portcheckin:'Cổng 1',status: 'Đã đối soát'},
+    {stt: '19',numberticket: 123456789034,dateuse:'14/04/2021',nameticket:'Vé cổng',portcheckin:'Cổng 1',status: 'Đã đối soát'},
+    {stt: '20',numberticket: 123456789034,dateuse:'14/04/2021',nameticket:'Vé cổng',portcheckin:'Cổng 1',status: 'Đã đối soát'},
 
-let Ticket =[];
+  
 
-const useStyles = makeStyles((theme) =>({
-  table: {
-    minWidth: 650, 
-  },
-}));
-for(let i=1;i<14;i++) {
-  Ticket[i] = {
-     stt: i,
-     numberticket: 123456789034 ,
-     datause: '14/04/2021',
-     name: 'Vé cổng',
-     port:'Cổng 1',
-     status: 'Chưa đối soát',     
-  }
-}
+  ];
 
+  const columns = [
+    {
+      title: 'STT',
+      dataIndex: 'stt',
+     
+    },
+    {
+      title: 'Số vé',
+      dataIndex: 'numberticket',
+     
+    },
+    {
+      title: 'Ngày sử dụng',
+      dataIndex: 'dateuse',
+      
+    },
+    {
+      title: 'Tên loại vé',
+      dataIndex: 'nameticket',
+     
+    },
+    {
+      title: 'Cổng check - in',
+      dataIndex: 'portcheckin',
+      
+    },
+    {
+      title: '',
+      dataIndex: 'status',
+      
+      render: status =>{
+        switch (status) {
+          case 'Đã đối soát':
+            return (
+              <p className="status">Đã sử dụng</p>
+            )
+        }
+     }
+    },
+  ]
 
-
-
-export default function Tablechangticket(props) {
-  const classes = useStyles();
-    return (
-        <div className='tableContent'>
-          {
-    <TableContainer component={Paper} >
-    <Table className={classes.table}  aria-label="simple table">
-        <TableHead>
-          <TableRow>
-            <TableCell>{props.row1}</TableCell>
-            <TableCell>{props.row2}</TableCell>
-            <TableCell>{props.row3}</TableCell>
-            <TableCell>{props.row4}</TableCell>
-            <TableCell>{props.row5}</TableCell>
-            <TableCell>{props.row6}</TableCell>
-
-          </TableRow>
-        </TableHead>
-          <TableBody>
-            {Ticket.map((row) => (
-              <TableRow  key={row.name} >
-              <TableCell>{row.stt}</TableCell>
-              <TableCell>{row.numberticket}</TableCell>
-              <TableCell>{row.datause}</TableCell>
-              <TableCell>{row.name}</TableCell>
-              <TableCell>{row.port}</TableCell>
-              <TableCell>{row.status}</TableCell>
-              </TableRow>
-            ))}
-          </TableBody>
-    
-    </Table>
-  </TableContainer>
-    
-    }
-        </div>
-    )
+export default function TableContent() {
+ 
+  return <div>
+      <Table dataSource={data} columns={columns} 
+      pagination={{
+          pageSize: 12,
+          style: {
+            justifyContent: 'center'
+          },
+          pageSizeOptions: ['10', '20', '30', '40'],
+        }}
+        size='small'
+ />;
+  </div>;
 }

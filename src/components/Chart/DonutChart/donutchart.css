@@ -1,0 +1,11 @@
+.donutChart{
+    margin-top: 20px;
+    height: 250px;
+}
+
+.donutChart-item{
+    flex: 1;
+    margin-left: 21px;
+}
+
+

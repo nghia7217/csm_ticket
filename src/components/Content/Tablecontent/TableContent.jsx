@@ -32,27 +32,27 @@ const data = [
     {
       title: 'STT',
       dataIndex: 'stt',
-      key: 'key'
+      
     },
     {
       title: 'Booking code',
       dataIndex: 'bookingcode',
-      key: 'key'
+     
     },
     {
       title: 'Số vé',
       dataIndex: 'numberticket',
-      key: 'key'
+     
     },
     {
       title: 'Tên sự kiện',
       dataIndex: 'nameevent',
-      key: 'key'
+     
     },
     {
       title: 'Tình trạng sử dụng',
       dataIndex: 'statususe',
-      key: 'key',
+     
       render: statususe =>{
         switch (statususe) {
           case 'Đã sử dụng':
@@ -81,17 +81,17 @@ const data = [
     {
       title: 'Ngày sử dụng',
       dataIndex: 'dateuse',
-      key: 'key'
+     
     },
     {
       title: 'Ngày xuất vé',
       dataIndex: 'daterelease',
-      key: 'key'
+   
     },
     {
       title: 'Cổng check - in',
       dataIndex: 'portcheckin',
-      key: 'key'
+     
     },
   ]
 

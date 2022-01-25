@@ -12,6 +12,7 @@ import OutlinedInput from '@mui/material/OutlinedInput';
 import MenuItem from '@mui/material/MenuItem';
 import FormControl from '@mui/material/FormControl';
 import Select from '@mui/material/Select';
+import Tablepacked from "../../components/Content/Tablepacked/Tablepacked"
 const style = {
     position: 'absolute',
     top: '50%',
@@ -156,7 +157,11 @@ export default function Setting() {
                     <button type="button" className="filtertickets__btn">Lưu</button>
                 </Box>
             </Modal>
+
+
             </div>
+
+            <Tablepacked/>
         </div>
     )
 }
