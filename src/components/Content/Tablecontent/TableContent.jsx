@@ -1,39 +1,5 @@
 import './tableContent.css'
 import { Table } from 'antd';
-import { dataEvents, columnsEvents } from '../../../Data/DataEvent';
-import { dataFamilys, columnsFamilys } from '../../../Data/Datafamily';
-
-const tabPakageTickets = ['Gói gia đình', 'Gói sự kiện'];
-
-export let dataTicket
-export let columnTicket
-
-
-function itemRender(current, type, originalElement) {
-  if (type === 'prev') {
-    return (
-      <a style={{
-        fontSize: 16, 
-        fontWeight: 900,
-      }}>
-        <i className="fas fa-caret-left"></i>
-      </a>
-    );
-  }
-  if (type === 'next') {
-    return (
-      <a style={{fontSize: 16, fontWeight: 900}}>
-        <i className="fas fa-caret-right"></i>
-      </a>
-      
-    );
-  }
-  return originalElement;
-}
-
-
-
-
 
 const data = [
     {stt: '1',bookingcode: 'ALT20210501',numberticket: 123456789034,nameevent: 'Hội chợ triển lãm tiêu dùng 2021',statususe:'Đã sử dụng',dateuse:'14/04/2021',daterelease:'14/04/2021',portcheckin:'Cổng 1',},

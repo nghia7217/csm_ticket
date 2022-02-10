@@ -1,5 +1,7 @@
 import './tablechangticket.css'
 import { Table } from 'antd';
+
+
 const data = [
     {stt: '1',numberticket: 123456789034,dateuse:'14/04/2021',nameticket:'Vé cổng',portcheckin:'Cổng 1',status: 'Đã đối soát'},
     {stt: '2',numberticket: 123456789034,dateuse:'14/04/2021',nameticket:'Vé cổng',portcheckin:'Cổng 1',status: 'Đã đối soát'},
@@ -67,7 +69,7 @@ const data = [
     },
   ]
 
-export default function TableContent() {
+export default function TableContent(DataEvent) {
  
   return <div>
       <Table dataSource={data} columns={columns} 
